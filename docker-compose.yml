@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  backend:
+    restart: always
+    build: ./TelegramBotDownloader
+    volumes:
+     - ./:/app/mnt:rw
+
